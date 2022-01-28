@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;
+
+200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2#icons") format(woff2);
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^=_icon-]::before,
+[class*=_icon-]::before {
+  font-family: "icons";
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^=_icon-]::before,
+[class*=_icon-]::before {
+  display: block;
+}
+
+._icon-connection:before {
+  content: "\e903";
+}
+
+._icon-wifi:before {
+  content: "\e904";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+end,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Gilroy";
+  font-size: 14px;
+  background: #E5E5E5;
+}
+
+.wrapper {
+  height: 812px;
+  background: #F2F2F2;
+  max-width: 375px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__options {
+  height: 44px;
+}
+
+.option__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.options__time {
+  color: #464646;
+  line-height: 15px;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 600;
+  padding: 13px 0px 13px 20px;
+}
+
+.options__icon {
+  width: 57px;
+  height: 44px;
+  color: #464646;
+}
+
+.options__iconflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 13px 20px 13px 0px;
+}
+
+._icon-connection {
+  font-size: 12px;
+  color: #464646;
+  background: #F2F2F2;
+}
+
+._icon-wifi {
+  background: #F2F2F2;
+  font-size: 12px;
+  color: #464646;
+}
+
+.profile__block {
+  width: 100%;
+  height: 66px;
+}
+
+.pofile__flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 44px;
+}
+
+.profile__text {
+  margin-left: 20px;
+  color: #464646;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.profile__text .line__textprofile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 0px;
+  height: 3px;
+  border-radius: 150px;
+  background: #464646;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.profile__text:hover {
+  text-shadow: 0px 0px 1px #bbbbbb;
+  color: #000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.profile__text:hover .line__textprofile {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 3px;
+  border-radius: 150px;
+  background: #000000;
+}
+
+.profile__avatar {
+  border: 3px solid #000000;
+  margin-right: 20px;
+  width: 35px;
+  height: 35px;
+  background: #4E5462;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.profile__avatar:hover {
+  -webkit-animation: user 0.8s;
+          animation: user 0.8s;
+}
+
+@-webkit-keyframes user {
+  0% {
+    border: 3px solid #000;
+    background-color: #4E5462;
+  }
+
+  50% {
+    background-color: #000000;
+    border: 16px solid #4E5462;
+  }
+
+  100% {
+    background-color: #4E5462;
+    border: 3px solid #000000;
+  }
+}
+
+@keyframes user {
+  0% {
+    border: 3px solid #000;
+    background-color: #4E5462;
+  }
+
+  50% {
+    background-color: #000000;
+    border: 16px solid #4E5462;
+  }
+
+  100% {
+    background-color: #4E5462;
+    border: 3px solid #000000;
+  }
+}
